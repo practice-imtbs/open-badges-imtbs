@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open Badges IMT-BS</title>
+  <meta name="description" content="Comment IMT Business School reconnaît l'engagement de ses étudiant·es par des Open Badges : catalogue, obtention, affichage sur LinkedIn et circuit de validation.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Pictogrammes et gabarit des emblèmes, réutilisés dans toute la page -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="ruban" viewBox="0 0 120 140">
+      <path d="M36 88 L24 136 L41 127 L50 139 L62 98 Z" fill="#000"/>
+      <path d="M84 88 L96 136 L79 127 L70 139 L58 98 Z" fill="#000"/>
+    </symbol>
+    <symbol id="ic-leader" viewBox="0 0 48 48" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="24" cy="15" r="6"/><path d="M13 38c0-7 5-11 11-11s11 4 11 11"/>
+      <circle cx="9" cy="19" r="4"/><path d="M2 36c0-5 3-8 7-8"/>
+      <circle cx="39" cy="19" r="4"/><path d="M46 36c0-5-3-8-7-8"/>
+    </symbol>
+    <symbol id="ic-innov" viewBox="0 0 48 48" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M17 30c-4-3-6-7-6-11a13 13 0 0 1 26 0c0 4-2 8-6 11v5H17z"/><path d="M18 40h12M20 45h8"/><path d="M24 12v6M20 19l4-1 4 1"/>
+    </symbol>
+    <symbol id="ic-ambass" viewBox="0 0 48 48" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 20v8h7l17 9V11L13 20z"/><path d="M13 28l3 11h5l-2-9"/><path d="M37 17c3 2 3 12 0 14M42 13c5 4 5 18 0 22"/>
+    </symbol>
+    <symbol id="ic-memoire" viewBox="0 0 48 48" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M24 12c-5-4-12-4-18-2v28c6-2 13-2 18 2 5-4 12-4 18-2V10c-6-2-13-2-18 2z"/><path d="M24 12v28"/>
+    </symbol>
+    <symbol id="ic-sport" viewBox="0 0 48 48" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 6h20v12a10 10 0 0 1-20 0z"/><path d="M14 10H7c0 7 3 10 8 11M34 10h7c0 7-3 10-8 11"/><path d="M24 28v8M16 43h16l-2-7H18z"/>
+    </symbol>
+    <symbol id="ic-mentor" viewBox="0 0 48 48" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="24" cy="24" r="18"/><path d="M6 24h36M24 6c6 6 6 30 0 36M24 6c-6 6-6 30 0 36"/>
+    </symbol>
+    <symbol id="ic-exemple" viewBox="0 0 48 48" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 25l8 8 16-17"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="entete">
+  <div class="conteneur">
+    <a href="#haut" aria-label="Retour en haut de page"><img src="img/logo-imtbs.png" alt="IMT Business School"></a>
+    <nav class="nav" aria-label="Sommaire">
+      <a href="#comprendre">Comprendre</a>
+      <a href="#badges">Les badges</a>
+      <a href="#etudiants">Étudiant·es</a>
+      <a href="#equipes">Équipes</a>
+      <a href="#calendrier">Repères</a>
+      <a href="#faq">Questions</a>
+    </nav>
+  </div>
+</header>
+
+<main id="haut">
+
+  <!-- Accueil -->
+  <section class="accueil">
+    <div class="conteneur">
+      <div>
+        <span class="surtitre">Service PracTice · Direction des Formations Initiales</span>
+        <h1>Les Open Badges d'IMT-BS</h1>
+        <p>Reconnaître ce que nos étudiant·es font au-delà des cours : engagement associatif, innovation, rayonnement de l'école, excellence académique. Un badge numérique, vérifiable, à afficher sur LinkedIn.</p>
+        <div class="boutons">
+          <a class="bouton plein" href="#etudiants">Je suis étudiant·e</a>
+          <a class="bouton contour" href="#equipes">Je porte ou valide un badge</a>
+        </div>
+      </div>
+      <div class="vitrine" aria-hidden="true">
+        <svg class="embleme" viewBox="0 0 120 140"><use href="#ruban"/><circle cx="60" cy="58" r="54" fill="#00B8DE" stroke="#fff" stroke-width="4"/><svg x="34" y="32" width="52" height="52"><use href="#ic-leader"/></svg></svg>
+        <svg class="embleme" viewBox="0 0 120 140"><use href="#ruban"/><circle cx="60" cy="58" r="54" fill="#000" stroke="#fff" stroke-width="4"/><svg x="34" y="32" width="52" height="52"><use href="#ic-innov"/></svg></svg>
+        <svg class="embleme" viewBox="0 0 120 140"><use href="#ruban"/><circle cx="60" cy="58" r="54" fill="#00B8DE" stroke="#fff" stroke-width="4"/><svg x="34" y="32" width="52" height="52"><use href="#ic-ambass"/></svg></svg>
+        <svg class="embleme" viewBox="0 0 120 140"><use href="#ruban"/><circle cx="60" cy="58" r="54" fill="#000" stroke="#fff" stroke-width="4"/><svg x="34" y="32" width="52" height="52"><use href="#ic-memoire"/></svg></svg>
+        <svg class="embleme" viewBox="0 0 120 140"><use href="#ruban"/><circle cx="60" cy="58" r="54" fill="#00B8DE" stroke="#fff" stroke-width="4"/><svg x="34" y="32" width="52" height="52"><use href="#ic-sport"/></svg></svg>
+        <svg class="embleme" viewBox="0 0 120 140"><use href="#ruban"/><circle cx="60" cy="58" r="54" fill="#000" stroke="#fff" stroke-width="4"/><svg x="34" y="32" width="52" height="52"><use href="#ic-mentor"/></svg></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comprendre -->
+  <section id="comprendre">
+    <div class="conteneur">
+      <div class="titre-section">
+        <span class="surtitre">Comprendre</span>
+        <h2>Un badge, c'est quoi ?</h2>
+        <p>Une image numérique qui atteste une expérience ou des compétences transversales acquises à l'école, en dehors du seul cadre des cours.</p>
+      </div>
+
+      <div class="deux-colonnes">
+        <div>
+          <blockquote class="citation">Le badge fonctionne comme un « passeport numérique » du savoir-être : il complète le diplôme et donne aux recruteurs une vision plus riche de chaque talent.</blockquote>
+          <p>Le standard <strong>Open Badges</strong> est ouvert : le badge n'est pas une simple image, il contient ses propres informations (qui l'a délivré, à qui, pourquoi, quand). N'importe qui peut en vérifier l'authenticité d'un clic, et il se partage partout : LinkedIn, CV en ligne, signature de mail, portfolio.</p>
+          <p>À IMT-BS, chaque badge correspond à un engagement précis, avec des critères écrits et un·e référent·e qui valide.</p>
+        </div>
+
+        <div class="fiche-badge">
+          <div class="haut">
+            <svg viewBox="0 0 120 140" aria-hidden="true"><use href="#ruban"/><circle cx="60" cy="58" r="54" fill="#AD1D89"/><svg x="34" y="32" width="52" height="52"><use href="#ic-exemple"/></svg></svg>
+            <div><strong>Ce que contient un badge</strong><span>Les informations lisibles par tout le monde</span></div>
+          </div>
+          <dl>
+            <div><dt>Émetteur</dt><dd>Institut Mines-Télécom Business School</dd></div>
+            <div><dt>Titulaire</dt><dd>Nom de l'étudiant·e</dd></div>
+            <div><dt>Critères</dt><dd>Ce qu'il a fallu faire pour l'obtenir, publiés avec le badge</dd></div>
+            <div><dt>Date</dt><dd>Date d'émission (et de validité si besoin)</dd></div>
+            <div><dt>Vérification</dt><dd>Lien unique, impossible à falsifier</dd></div>
+          </dl>
+        </div>
+      </div>
+
+      <div class="trois-points">
+        <div class="point"><h3>Motiver</h3><p>Donner une raison de plus de s'engager dans la vie de l'école et de ses projets.</p></div>
+        <div class="point"><h3>Reconnaître</h3><p>Rendre visible un engagement qui n'apparaît ni dans les notes ni dans le diplôme.</p></div>
+        <div class="point"><h3>Valoriser</h3><p>Offrir aux étudiant·es une preuve vérifiable, utile pour un stage, une alternance ou un premier emploi.</p></div>
+      </div>
+
+      <p class="encadre"><strong>À retenir :</strong> un badge ne remplace ni les ECTS ni le diplôme, et ce n'est pas une certification de compétences (RNCP, Répertoire spécifique). C'est un complément de valorisation : un étudiant ambassadeur peut avoir à la fois son ECTS et son badge.</p>
+    </div>
+  </section>
+
+  <!-- Catalogue -->
+  <section id="badges" class="doux">
+    <div class="conteneur">
+      <div class="titre-section">
+        <span class="surtitre">Le catalogue</span>
+        <h2>Les badges IMT-BS</h2>
+        <p>Six badges ont été proposés. Certains sont prêts, d'autres encore en cours de définition avec leurs porteurs. Le statut est indiqué sur chaque carte.</p>
+      </div>
+
+      <div class="legende">
+        <span><span class="statut valide">Validé</span></span>
+        <span><span class="statut cours">Attribution en cours</span></span>
+        <span><span class="statut cadrage">En cadrage</span></span>
+        <span><span class="statut envisage">Envisagé</span></span>
+        <span><span class="statut reporte">Reporté</span></span>
+      </div>
+
+      <div class="grille-badges">
+
+        <article class="carte">
+          <div class="tete">
+            <div><span class="famille">Participation</span><h3>Ambassadeur IMT-BS</h3></div>
+            <svg viewBox="0 0 120 140" aria-hidden="true"><use href="#ruban"/><circle cx="60" cy="58" r="54" fill="#00B8DE"/><svg x="34" y="32" width="52" height="52"><use href="#ic-ambass"/></svg></svg>
+          </div>
+          <span class="statut valide">Validé</span>
+          <p>Pour les étudiant·es du programme ambassadeur qui représentent l'école : salons, forums, journées portes ouvertes.</p>
+          <ul>
+            <li><b>Pour qui</b><span>Les quelque 25 étudiant·es du programme (Bachelor et PGE), coordinateurs compris</span></li>
+            <li><b>Obtention</b><span>Automatique pour qui termine le programme, sans dossier à déposer</span></li>
+            <li><b>Validation</b><span>Hocine BELLAL et son équipe transmettent la liste</span></li>
+            <li><b>Quand</b><span>Mars-avril, en même temps que l'ECTS</span></li>
+          </ul>
+        </article>
+
+        <article class="carte">
+          <div class="tete">
+            <div><span class="famille">Reconnaissance · Innovation</span><h3>Innovateur Junior</h3></div>
+            <svg viewBox="0 0 120 140" aria-hidden="true"><use href="#ruban"/><circle cx="60" cy="58" r="54" fill="#AD1D89"/><svg x="34" y="32" width="52" height="52"><use href="#ic-innov"/></svg></svg>
+          </div>
+          <span class="statut cours">Attribution en cours</span>
+          <p>Certifie une idée, mais surtout une capacité d'exécution et de création de valeur entrepreneuriale.</p>
+          <ul>
+            <li><b>Pour qui</b><span>Les étudiant·es IMT-BS des trois équipes lauréates des prix de l'incubateur</span></li>
+            <li><b>Obtention</b><span>Sur liste : les résultats des prix font foi</span></li>
+            <li><b>Validation</b><span>Incubateur, avec le service PracTice</span></li>
+            <li><b>Volume</b><span>De 10 à 20 badges par an environ</span></li>
+          </ul>
+        </article>
+
+        <article class="carte">
+          <div class="tete">
+            <div><span class="famille">Communauté &amp; Leadership</span><h3>Leader Associatif</h3></div>
+            <svg viewBox="0 0 120 140" aria-hidden="true"><use href="#ruban"/><circle cx="60" cy="58" r="54" fill="#00B8DE"/><svg x="34" y="32" width="52" height="52"><use href="#ic-leader"/></svg></svg>
+          </div>
+          <span class="statut cadrage">En cadrage</span>
+          <p>Reconnaît la prise de responsabilités dans la vie associative de l'école.</p>
+          <ul>
+            <li><b>Pour qui</b><span>Tout·e étudiant·e ayant géré un budget ou des responsabilités administratives dans une association (pas seulement présidence et trésorerie)</span></li>
+            <li><b>Obtention</b><span>Sur candidature volontaire, avec dépôt de preuves sur Moodle</span></li>
+            <li><b>Validation</b><span>Elisabeth et Anne-Laure (à confirmer)</span></li>
+          </ul>
+        </article>
+
+        <article class="carte">
+          <div class="tete">
+            <div><span class="famille">Excellence académique</span><h3>Meilleur Mémoire</h3></div>
+            <svg viewBox="0 0 120 140" aria-hidden="true"><use href="#ruban"/><circle cx="60" cy="58" r="54" fill="#AD1D89"/><svg x="34" y="32" width="52" height="52"><use href="#ic-memoire"/></svg></svg>
+          </div>
+          <span class="statut cadrage">En cadrage</span>
+          <p>Distingue un mémoire de fin d'études jugé remarquable : rigueur, réflexion critique, problématique pertinente, recommandations actionnables.</p>
+          <ul>
+            <li><b>Pour qui</b><span>Étudiant·es du PGE, d'un Mastère Spécialisé ou d'un MSc</span></li>
+            <li><b>Obtention</b><span>Sur proposition du jury de soutenance</span></li>
+            <li><b>Critères</b><span>Travaillés par Sivani et Sandrine, à finaliser</span></li>
+          </ul>
+        </article>
+
+        <article class="carte attenuee">
+          <div class="tete">
+            <div><span class="famille">Engagement</span><h3>Capitaine Sport</h3></div>
+            <svg viewBox="0 0 120 140" aria-hidden="true"><use href="#ruban"/><circle cx="60" cy="58" r="54" fill="#000"/><svg x="34" y="32" width="52" height="52"><use href="#ic-sport"/></svg></svg>
+          </div>
+          <span class="statut envisage">Envisagé</span>
+          <p>Reconnaît un leadership régulier sur toute une saison sportive.</p>
+          <ul>
+            <li><b>Pour qui</b><span>Les capitaines d'équipe (football, rugby…)</span></li>
+            <li><b>Critères</b><span>À définir avec Stéphane, sur proposition de Marine</span></li>
+          </ul>
+        </article>
+
+        <article class="carte attenuee">
+          <div class="tete">
+            <div><span class="famille">Compétence</span><h3>Mentor International</h3></div>
+            <svg viewBox="0 0 120 140" aria-hidden="true"><use href="#ruban"/><circle cx="60" cy="58" r="54" fill="#000"/><svg x="34" y="32" width="52" height="52"><use href="#ic-mentor"/></svg></svg>
+          </div>
+          <span class="statut reporte">Reporté</span>
+          <p>Pour l'accompagnement des nouveaux étudiant·es internationaux (Buddy Program) durant leur premier semestre.</p>
+          <ul>
+            <li><b>Pour qui</b><span>Les « buddies » du programme d'accueil</span></li>
+            <li><b>En attente</b><span>Missions à définir plus clairement avec la DRDI</span></li>
+          </ul>
+        </article>
+
+      </div>
+
+      <div class="voies">
+        <div class="voie liste">
+          <span class="surtitre">Voie 1</span>
+          <h3>Sur liste</h3>
+          <p>Le badge récompense un rôle ou un résultat déjà constaté par l'école : programme ambassadeur terminé, prix de l'incubateur, mémoire distingué par le jury.</p>
+          <p>L'étudiant·e n'a rien à faire : le ou la référent·e transmet la liste et le badge arrive par mail.</p>
+        </div>
+        <div class="voie candidature">
+          <span class="surtitre">Voie 2</span>
+          <h3>Sur candidature</h3>
+          <p>Le badge récompense un engagement que l'école ne voit pas toujours, comme la gestion d'une association.</p>
+          <p>L'étudiant·e dépose ses preuves sur l'espace Moodle des badges, puis les référent·es examinent le dossier.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Étudiant·es -->
+  <section id="etudiants">
+    <div class="conteneur">
+      <div class="titre-section">
+        <span class="surtitre">Pour les étudiant·es</span>
+        <h2>Obtenir et afficher son badge</h2>
+        <p>Quatre étapes, de l'engagement jusqu'au profil LinkedIn.</p>
+      </div>
+
+      <ol class="etapes">
+        <li><h3>S'engager</h3><p>Prendre part au dispositif : programme ambassadeur, association, incubateur, mémoire… Les critères de chaque badge sont publiés.</p></li>
+        <li><h3>Être validé·e</h3><p>Selon le badge, rien à faire (voie sur liste) ou déposer ses preuves sur l'espace Moodle des badges (voie sur candidature).</p></li>
+        <li><h3>Recevoir</h3><p>Un mail arrive avec le lien vers le badge. On l'accepte et on peut le ranger dans son portefeuille numérique (backpack).</p></li>
+        <li><h3>Afficher</h3><p>LinkedIn, rubrique « Licences et certifications » : nom du badge, émetteur IMT-BS, date et URL de vérification.</p></li>
+      </ol>
+
+      <div class="conseils">
+        <div class="conseil">
+          <h3>Ajouter son badge sur LinkedIn</h3>
+          <ul>
+            <li>Profil, puis « Ajouter une section », puis « Licences et certifications ».</li>
+            <li>Nom : l'intitulé exact du badge.</li>
+            <li>Organisme : IMT Business School.</li>
+            <li>Date d'obtention et URL du badge (celle du mail).</li>
+          </ul>
+        </div>
+        <div class="conseil">
+          <h3>Le partager</h3>
+          <ul>
+            <li>Un post pour annoncer le badge, en mentionnant l'école.</li>
+            <li>Le lien dans une signature de mail ou un CV en ligne.</li>
+            <li>En entretien : le badge appuie un exemple concret de leadership ou d'engagement.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Équipes -->
+  <section id="equipes" class="doux">
+    <div class="conteneur">
+      <div class="titre-section">
+        <span class="surtitre">Pour les porteurs et les référent·es</span>
+        <h2>Le circuit d'un badge</h2>
+        <p>Du cadrage à la délivrance, chaque badge suit le même circuit. Le service PracTice s'occupe de l'outillage ; les référent·es apportent leur connaissance des étudiant·es.</p>
+      </div>
+
+      <ol class="etapes cinq bleu">
+        <li><h3>Cadrer</h3><p>Définir à qui s'adresse le badge, les critères et la preuve attendue.</p><span class="qui">Porteur + PracTice</span></li>
+        <li><h3>Concevoir</h3><p>Créer le visuel et la fiche du badge (critères publiés) dans Open Badge Factory.</p><span class="qui">PracTice</span></li>
+        <li><h3>Collecter</h3><p>Recevoir la liste des lauréat·es ou les preuves déposées sur l'espace Moodle commun.</p><span class="qui">Référent·e · Moodle</span></li>
+        <li><h3>Valider</h3><p>Confirmer qui reçoit le badge. Une liste ou un examen rapide des dossiers suffit.</p><span class="qui">Référent·e</span></li>
+        <li><h3>Délivrer</h3><p>Émettre les badges : chaque titulaire reçoit son mail et son lien de vérification.</p><span class="qui">PracTice · Open Badge Factory</span></li>
+      </ol>
+
+      <div class="tableau-wrap">
+        <table>
+          <thead>
+            <tr><th>Badge</th><th>Porteur / référent·e</th><th>Suivi PracTice</th><th>Prochaine étape</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Ambassadeur IMT-BS</td><td>Hocine BELLAL et son équipe</td><td>Sivani</td><td>Espace Moodle, puis liste des 25 étudiant·es en mars-avril</td></tr>
+            <tr><td>Innovateur Junior</td><td>Incubateur (Seb)</td><td>Julien</td><td>Finaliser l'attribution aux trois équipes lauréates</td></tr>
+            <tr><td>Leader Associatif</td><td>Elisabeth et Anne-Laure (à confirmer)</td><td>Marine</td><td>Rencontre avec Elisabeth, ouverture du dépôt Moodle</td></tr>
+            <tr><td>Meilleur Mémoire</td><td>Sandrine, jurys de soutenance</td><td>Sivani</td><td>Finaliser les critères</td></tr>
+            <tr><td>Capitaine Sport</td><td>Stéphane</td><td>Marine</td><td>Définir les critères</td></tr>
+            <tr><td>Mentor International</td><td>Clémence DROUET (DRDI)</td><td>—</td><td>Reporté : missions à préciser</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="principes">
+        <div class="principe"><h3>Une charge légère</h3><p>Pas de portfolio imposé quand l'école connaît déjà les lauréat·es. Les référent·es valident, ils ne corrigent pas.</p></div>
+        <div class="principe"><h3>Des critères écrits</h3><p>Chaque badge publie ses critères. Un critère trop subjectif (par exemple l'avis d'un seul tuteur) écarte le badge.</p></div>
+        <div class="principe"><h3>Un seul espace</h3><p>Un espace Moodle commun à tous les badges pour les dépôts, les listes et les notifications.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Repères -->
+  <section id="calendrier">
+    <div class="conteneur">
+      <div class="titre-section">
+        <span class="surtitre">Repères</span>
+        <h2>Où en est le projet</h2>
+      </div>
+      <ol class="frise">
+        <li><span class="quand">Mai 2026</span><strong>Proposition au CFP</strong><p>Présentation des Open Badges et des cinq premiers badges ; workflow Open Badge Factory et Moodle.</p></li>
+        <li><span class="quand">30 septembre 2026</span><strong>Réunion de lancement</strong><p>Critères du Leader Associatif élargis, Innovateur Junior confirmé, idée d'un badge Sport.</p></li>
+        <li><span class="quand">5 octobre 2026</span><strong>Feu vert de la DFI</strong><p>Stephen GIRARD valide la démarche : « on fonce ».</p></li>
+        <li><span class="quand">12 octobre 2026</span><strong>Badge Ambassadeur validé</strong><p>Attribué aux 25 étudiant·es du programme, sans preuve supplémentaire.</p></li>
+        <li><span class="quand">Mars-avril 2027</span><strong>Premières listes</strong><p>Transmission de la liste des ambassadeurs, en même temps que la validation de l'ECTS.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="doux">
+    <div class="conteneur">
+      <div class="titre-section">
+        <span class="surtitre">Questions fréquentes</span>
+        <h2>Bon à savoir</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>J'ai déjà des ECTS pour cet engagement. Pourquoi un badge en plus ?</summary>
+          <p>Les ECTS comptent pour le diplôme ; le badge se voit à l'extérieur. Il se partage sur LinkedIn et se vérifie en un clic, ce que ne permet pas une ligne de relevé de notes.</p>
+        </details>
+        <details>
+          <summary>Est-ce que le badge est une certification ?</summary>
+          <p>Non. Il atteste un engagement ou une distinction à l'école, selon des critères publiés. Il n'a ni la portée ni les exigences d'une certification enregistrée (RNCP, Répertoire spécifique).</p>
+        </details>
+        <details>
+          <summary>Comment un recruteur sait-il que mon badge est authentique ?</summary>
+          <p>Chaque badge a un lien de vérification unique. En le suivant, on voit l'émetteur (IMT-BS), la date, le titulaire et les critères d'attribution.</p>
+        </details>
+        <details>
+          <summary>Je pense remplir les critères d'un badge sur candidature. Que faire ?</summary>
+          <p>Déposer ses preuves sur l'espace Moodle des badges dès son ouverture : par exemple un budget présenté, un compte rendu d'assemblée générale ou une attestation du bureau de l'association.</p>
+        </details>
+        <details>
+          <summary>Je veux proposer un nouveau badge pour mon service ou mon programme.</summary>
+          <p>Contactez le service PracTice. On regarde ensemble à qui il s'adresse, quelle preuve est disponible et qui valide ; si le circuit reste léger, le badge peut entrer dans le catalogue.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pied">
+  <div class="conteneur">
+    <p><strong>Open Badges IMT-BS</strong> · Service PracTice, Direction des Formations Initiales</p>
+    <p>Institut Mines-Télécom Business School · Évry</p>
+  </div>
+</footer>
+
+</body>
+</html>
